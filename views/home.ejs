@@ -1,179 +1,251 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/index_style.css">
-    <title>Home</title>
-</head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
 
+        <link rel="stylesheet" href="css/all.min.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Dancing+Script:wght@400;500&family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/index_style.css">
+        <link rel="stylesheet" href="css/lightslider.css">
+        <link rel="stylesheet" href="sliderstyle.css">
 
-<%- include('shared/navbar.ejs')  %> 
+    </head>
+    <body>
 
 
 
+        <nav class="navbar navbar-expand-lg nav-bg  px-4  pt-2 ">
+<a class="logo" href=""><span class="g">G</span>oldgolio</a>
+              
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home"> Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">Sections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services"> Media & Publications</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#PORTFOLIO">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#price"> About </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#clients">Other</a>
+                  </li>
+                 
+               
+            </div>
 
-        <!-- load -->
-        <div class="shadow">
-            <div class="sk-folding-cube">
-                <div class="sk-cube1 sk-cube"></div>
-                <div class="sk-cube2 sk-cube"></div>
-                <div class="sk-cube4 sk-cube"></div>
-                <div class="sk-cube3 sk-cube"></div>
-              </div>
-        </div>
-        <!-- end load -->
+            
+            
 
-        <!-- bookmark -->
-        <div class="book">
-            <div class="container pt-4">
+            <div class="mr-5">
+                <ul class="navbar-nav m-auto ">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                           <img width="40" src="images/man.jpg" alt="">
+                           <%= Name %> 
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/logOut">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+
+        
+
+
+        <section id="home" class="text-center">
+           
+            
+            <div class="container-fluid py-5 mb-5">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h4 class="bg-light text-center py-1 rounded">Your Watchlist</h4>
+                    <div class="col-md-5 ">
+                     <div class="caption">
+                        <h1>Welcome Home</h1>
+                        <h3>Gold</h3>
+                        <h2>Golio</h2>
+                        <p>We discover talent. We champion diversity and inclusivity</p>
+                     </div>
+                    </div>
+                    <div class="col-md-7 ">
+                        <div class="card-carousel">
+                            
+                              <div class="my-card">
+                                  <img src="images/image 2.png" alt="">
+                              </div>
+                              <div class="my-card">
+                                <img src="images/IMG_20200802_054614_030.png" alt="">
+                              </div>
+                              <div class="my-card">
+                                <img src="images/IMG_3926.png" alt="">
+                              </div> 
+                            </div>
+                            
+
                     </div>
                 </div>
             </div>
-            <div class="after">
-                <i class="far fa-bookmark openclose"></i>
-            </div>
-            <div class="containss">
-                <div class="row bookdisplay p-4">
-                            
+        </section>
+
+
+
+        
+
+
+        <section id="about" class="">
+            
+            
+            <div class="container-fluid py-5 my-5">
+                <div class="title " >
+                    <h2>Trending & News</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="img">
+                   <img class="img-fluid" src="images/IMG_20201113_000019_201.png" alt="" srcset="">
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 pt-3">
+                       <div class="caption">
+                           
+                        <h4>Tharaa Goubail</h4>
+                        <p>She just finished her acting workshop and everyone was having fun.</p>
+                       </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- end bookmark -->
+        </section>
 
 
 
-        <!-- nav -->
-            <section id="nav">
-                <div class="contain row">
-                    <div class="col-10 navmenu p-4">
-                        <div class="row text-light category hide pl-3 pt-2">
-                                <p data-id="now_playing" class="p-0 border-left pl-3 mb-4 first">Now playing</p>
+
+        <section id="services" class=" py-5 ">
+            <div class="container-fluid ">
+                <h3>NEW FACES</h3>
+                <div class="your-class">
+                    <div><img src="images/IMG_3926 (1).png" class="img-fluid" alt=""></div>
+                    <div><img src="images/IMG_3926 (1).png" class="img-fluid" alt=""></div>
+                    <div><img src="images/IMG_3926 (1).png" class="img-fluid" alt=""></div>
+                    <div><img src="images/IMG_3926 (1).png" class="img-fluid" alt=""></div>
+                    
+                  </div>
+               
+            </div>
+        </section>
+
+
+        <section id="Sections" class=" py-5 ">
+            <div class="container-fluid ">
+                <h3>Sections</h3>
+                <div class="your-class">
+                    <div><img src="images/image 5.png" class="img-fluid" alt=""></div>
+                    <div><img src="images/image 6.png" class="img-fluid" alt=""></div>
+                    <div><img src="images/image 7.png" class="img-fluid" alt=""></div>
+                    
+                  </div>
+               
+            </div>
+        </section>
+
+
+
+        <section id="Agencies" class="my-5">
+            <div class="container-fluid">
+
+                <h3>Agencies</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="img">
+                            <img src="images/image 8.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img">
+                            <img src="images/image 9.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+            <footer class=" py-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p>
+                            <strong>Goldgolio</strong>  is an online casting platform, for those who want to expose their talents to talent hunters, to get more work opportunities in the media field. On the other hand, we also offer the talent seekers the ideal candidate for their project.
+
+                            </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact">
+                            
+                            <h4>CONTACT US</h4>
+                            <h5>Telephone: 01024010174</h5>
+                            <h5>Email: goldgolioagency@gmail.com</h5>
+                            <h5>Address: Everywhere man just look</h5>
+
+                        </div>
+                  </div>
+
+                  <div class="col-md-4">
+
+                   <h4>Follow Gold Golio On :</h4>
+              </div>
+                </div>
+                </div>
+                <div class="text-center py-4">
+                <p class="copyright" >All content Copyright © Ahmedsoudy.com, Inc. 2000-2022 </p>
+
+                </div>
+            </footer>
+
+
+
+
+
+
+
+        
        
-                                <p data-id="popular" class="p-0 border-left pl-3 mb-4 first">Popular</p>
-                        
-                                <p data-id="top_rated" class="p-0 border-left pl-3 mb-4 first">Top Rated</p>
 
-                                <p data-id="trending" class="p-0 border-left pl-3 mb-4 first">Trending</p>
-                        
-                                <p data-id="upcoming" class="p-0 border-left pl-3 mb-4 first">Upcoming</p>
-                            
-                                <a href="#contacus"><p data-id=""  class="p-0 border-left pl-3 mb-4 first Contactus">Contact Us</p></a>
-                        </div>
-                        <div class="row">
-                            <div class="contacticon text-light p-3">
-                                <i class="fab fa-facebook-square"></i>
-                                <i class="fab fa-twitter-square px-2"></i>
-                                <i class="fas fa-globe"></i>
-                                <p style="font-size: 0.8rem" class="pt-2" >Copyright Â© 2019 All Rights Reserved.</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-2  bg-light fffffff">
-                        <div class="row divicon text-center h-100 mt-3">
-                            <div style="font-size: 2rem;" class="col p-0">
-                                <div class="divtoinmate"><i class="fas fa-level-up-alt py-2"></i></div>
-                            </div>
-                            <div style="font-size: 1.7rem;cursor: pointer;" class="col centericon p-0">
-                                <i class="fas fa-bars"></i>
-                            </div>
-                            <div style="font-size: 1.2rem;" class="col lasticon">
-                                <i class="fas fa-globe my-2"></i>
-                                <i class="far fa-share-square mt-2"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        <!-- end nav -->
+ <script src="/js/jquery-3.5.1.js"></script>
+ <script src="/js/popper.min.js"></script>
+ <script src="/js/bootstrap.min.js"></script>
+ <script src="/js/bootstrap.min.js"></script>
 
 
-        <!-- search -->
-        <section id="search" class="pt-3">
-            <div class="container pt-1">
-                <div class="row mediasm">
-                    <div class="col-md-6 mb-3">
-                        <input onkeyup="search(this.value)" type="text" class="input-group input-group-sm text-center myinput " placeholder="get movies by word...">
-                    </div>
-                    <div class="col-md-6">
-                        <input onkeyup="searchword(this.value)" type="text" class=" input-group input-group-sm text-center myinput" placeholder="search...">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--  end search -->
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ <script src="js/lightslider.min.js"></script>
+
+ <script src="/js/index.min.js"></script>
+ <script src="/js/main.js"></script>
 
 
-
-        <!-- display items -->
-            <section id="display">
-                <div class="container">
-                    <div class="row pt-4 refoo">
-                        
-                    </div>
-                </div>
-            </section>
-        <!-- end display items -->
-
-
-
-        <!-- ContacUs... -->
-        <section id="contacusoff">
-            <div class="container my-5">
-                <div class="row allinputs">
-                    <div class="col-md-6 mb-4"><input class=" input-group input-group-sm text-center myinput mb-2" name="name" type="text" placeholder="Enter Your Name">
-                        <div class="alert alertname alert-danger text-center hideee" role="alert">
-                            your Name is not valid
-                          </div>
-                    </div>
-                    <div class="col-md-6 mb-4"><input onkeyup="emailnput(this.value)" class=" input-group input-group-sm text-cEnter myinput mb-2" type="text" placeholder="Enter Mail" name="email">
-                        <div class="alert alertname alert-danger text-center hideee" role="alert">
-                            entre valid email
-                          </div>
-                    </div>
-                    <div class="col-md-6 mb-4"><input onkeyup="phonenput(this.value)" class=" input-group input-group-sm text-cEnter myinput mb-2" type="text" placeholder="Enter Phone" name="phone">
-                        <div class="alert alertname alert-danger text-center hideee" role="alert">
-                            entre valid phone
-                          </div>
-                    </div>
-                    <div class="col-md-6 mb-4"><input onkeyup="Agenput(this.value)" class=" input-group input-group-sm text-cEnter myinput mb-2" type="text" placeholder="Enter Age" name="age">
-                        <div class="alert alertname alert-danger text-center hideee" role="alert">
-                            entre valid Age
-                          </div>
-                    </div>
-                    <div class="col-md-6 mb-4"><input onkeyup="passwordnput(this.value)" class=" input-group input-group-sm text-cEnter myinput mb-2" type="text" placeholder="Enter Password" name="password">
-                        <div class="alert alertname alert-danger text-center hideee" role="alert">
-                            entre valid password *Minimum eight characters, at least one letter and one number:*
-                          </div>
-                    </div>
-                    <div class="col-md-6 mb-4"><input onkeyup="repasswordnput(this.value)" class=" input-group input-group-sm text-center myinput mb-2" type="text" placeholder="Enter Repassword" name="rpassword">
-                        <div class="alert alertname alert-danger text-center hideee" role="alert">
-                            repassword is not the SAME!
-                          </div>
-                    </div>
-                </div>
-                <button class="btn btn-outline-primary mybtn ">Submit</button>
-            </div>
-        </section>
-        <!-- end ContacUs... -->
-
-
-
-
-
-<%- include('shared/footer.ejs')  %> 
+    </body>
+</html>
